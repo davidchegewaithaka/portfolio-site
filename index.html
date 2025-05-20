@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of David Chege Waithaka, a tech-savvy developer skilled in M-Pesa API, PHP, MySQL, and responsive web design.">
+  <title>David Chege Waithaka - Portfolio</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .progress-bar {
+      animation: fillBar 2s ease-in-out forwards;
+    }
+
+    @keyframes fillBar {
+      from {
+        width: 0;
+      }
+      to {
+        width: var(--progress);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-gray-800 sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-6 flex justify-between items-center py-4">
+     <a href="#home" class="text-xl font-bold text-blue-400 flex items-center">
+     🚀Devy🚀<span class="text-white">_labs</span>
+     </a>
+      <button id="menu-btn" class="sm:hidden text-white">
+        ☰
+      </button>
+      <ul id="nav-links" class="hidden sm:flex gap-6">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+        <li><a href="#services" class="hover:text-blue-400">Services</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </nav>
+    <ul id="mobile-menu" class="sm:hidden hidden flex-col text-center bg-gray-800">
+      <li><a href="#home" class="block p-2 hover:text-blue-400">Home</a></li>
+      <li><a href="#about" class="block p-2 hover:text-blue-400">About</a></li>
+      <li><a href="#skills" class="block p-2 hover:text-blue-400">Skills</a></li>
+      <li><a href="#services" class="block p-2 hover:text-blue-400">Services</a></li>
+      <li><a href="#projects" class="block p-2 hover:text-blue-400">Projects</a></li>
+      <li><a href="#contact" class="block p-2 hover:text-blue-400">Contact</a></li>
+    </ul>
+  </header>
+
+<!-- Home Section -->
+<section id="home" class="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
+
+      <!-- Left (Image) -->
+      <div class="w-full md:w-2/5 flex justify-start p-4">
+        <img src="images/davy.jpg" alt="David Chege Waithaka - Full Stack Developer and M-Pesa API associate"
+          class="w-64 h-64 md:w-72 md:h-72 object-contain rounded-lg shadow-md transition duration-500 hover:scale-105 hover:ring-4 hover:ring-blue-400 hover:ring-opacity-50">
+      </div>
+
+      <!-- Right (Text + Interactions) -->
+      <div class="w-full md:w-3/5 flex flex-col items-center md:items-end text-center md:text-right md:pl-8">
+        <h2 class="text-3xl font-bold mb-2">Hi, I'm David Waithaka</h2>
+
+        <!-- Typewriter Effect -->
+        <span id="typed" class="text-blue-400 font-semibold text-lg"></span>
+
+        <!-- Mission Statement -->
+        <p class="italic text-gray-400 mt-4">"Building solutions, one line of code at a time."</p>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
+          <a href="#projects" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white">View Projects</a>
+          <a href="#" class="border border-blue-400 hover:bg-blue-500 hover:text-white px-4 py-2 rounded text-blue-400">Download Resume</a>
+        </div>
+
+        <!-- Scroll Down Arrow -->
+        <div class="mt-10 animate-bounce text-blue-400 text-2xl">
+          ↓
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- About Section -->
+<section id="about" class="py-16 bg-gray-800">
+  <div class="max-w-6xl mx-auto px-6 transform transition duration-1000 ease-in-out opacity-0 animate-fade-in">
+    <h2 class="text-2xl font-bold mb-6 text-white">About Me</h2>
+    <div class="text-gray-300 space-y-4 leading-relaxed">
+      <p>
+        From a young age, my deep curiosity about how computers and software work behind the scenes sparked a lifelong passion for technology. This passion evolved into a strong self-driven journey as a software developer — one that fuels my enthusiasm to plan, build, test, deploy, and maintain robust digital solutions.
+      </p>
+      <p>
+        I'm particularly experienced in developing full-cycle web applications with a strong focus on mobile payments, especially through M-Pesa Daraja API integration, and have hands-on expertise in PHP, MySQL, Postman, and Ngrok.
+      </p>
+      <p>
+        Fueled by lifelong curiosity and a love for tech, I’ve grown into a self-driven developer with a passion for building, testing, and maintaining scalable digital solutions.
+      </p>
+      <ul class="list-disc list-inside pl-4">
+        <li>💻 Backend & API Integration (PHP, MySQL)</li>
+        <li>🎨 Responsive Web Design</li>
+        <li>📱 M-Pesa Daraja API Integration</li>
+        <li>📊 Data Visualization (Tableau)</li>
+      </ul>
+      <p>
+        As a motivated and tech-savvy Computer Science graduate, I take pride in delivering clean, scalable, and client-centered software solutions. Each project I work on is a new opportunity to learn, grow, and contribute meaningfully in the ever-evolving field of computer science.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Animation styles -->
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+</style>
+
+<!-- Skills Section -->
+<section id="skills" class="py-16 px-6 bg-gray-900 text-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold mb-8 text-center">Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      
+      <!-- Column 1 -->
+      <div class="space-y-4">
+        <div class="group">
+          <label class="flex items-center gap-2 font-semibold">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="w-5 h-5" /> PHP
+          </label>
+          <div class="w-full h-4 bg-gray-700 rounded">
+            <div class="h-4 bg-blue-500 rounded shadow-lg group-hover:shadow-blue-400 transition-all duration-700 ease-in-out" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="group">
+          <label class="flex items-center gap-2 font-semibold">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-5 h-5" /> MySQL
+          </label>
+          <div class="w-full h-4 bg-gray-700 rounded">
+            <div class="h-4 bg-green-500 rounded shadow-lg group-hover:shadow-green-400 transition-all duration-700 ease-in-out" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="group">
+          <label class="flex items-center gap-2 font-semibold">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-5 h-5" /> JavaScript
+          </label>
+          <div class="w-full h-4 bg-gray-700 rounded">
+            <div class="h-4 bg-yellow-500 rounded shadow-lg group-hover:shadow-yellow-400 transition-all duration-700 ease-in-out" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="group">
+          <label class="flex items-center gap-2 font-semibold">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-5 h-5" /> Tailwind CSS
+          </label>
+          <div class="w-full h-4 bg-gray-700 rounded">
+            <div class="h-4 bg-indigo-500 rounded shadow-lg group-hover:shadow-indigo-400 transition-all duration-700 ease-in-out" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="space-y-4">
+        <div class="group">
+          <label class="flex items-center gap-2 font-semibold">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-5 h-5" /> HTML
+          </label>
+          <div class="w-full h-4 bg-gray-700 rounded">
+            <div class="h-4 bg-orange-500 rounded shadow-lg group-hover:shadow-orange-400 transition-all duration-700 ease-in-out" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="group">
+          <label class="flex items-center gap-2 font-semibold">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-5 h-5" /> Python
+          </label>
+          <div class="w-full h-4 bg-gray-700 rounded">
+            <div class="h-4 bg-yellow-600 rounded shadow-lg group-hover:shadow-yellow-300 transition-all duration-700 ease-in-out" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="group">
+          <label class="flex items-center gap-2 font-semibold">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" class="w-5 h-5" /> Bootstrap
+          </label>
+          <div class="w-full h-4 bg-gray-700 rounded">
+            <div class="h-4 bg-purple-500 rounded shadow-lg group-hover:shadow-purple-400 transition-all duration-700 ease-in-out" style="width: 78%;"></div>
+          </div>
+        </div>
+        <div class="group">
+          <label class="flex items-center gap-2 font-semibold">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="w-5 h-5" /> Django
+          </label>
+          <div class="w-full h-4 bg-gray-700 rounded">
+            <div class="h-4 bg-green-600 rounded shadow-lg group-hover:shadow-green-300 transition-all duration-700 ease-in-out" style="width: 68%;"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Services Section -->
+<section id="services" class="py-16 px-6 bg-gray-900 text-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-12 text-center">Services I Offer</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Service 1 -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">M-Pesa API Integration</h3>
+        <p class="text-gray-300">Seamless STK Push setups, callback handling, transaction logging, and Daraja sandbox testing for mobile payments.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Full-Stack Web Development</h3>
+        <p class="text-gray-300">Modern web applications using HTML, CSS, JavaScript, PHP, and Django, with responsive UI/UX design using Tailwind and Bootstrap.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Backend API Development</h3>
+        <p class="text-gray-300">Robust REST APIs in PHP and Django, complete with JSON handling, database integration, and secure architecture.</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Data Analytics & Visualization</h3>
+        <p class="text-gray-300">Transform raw data into insights with Tableau dashboards, SQL queries, Excel analysis, and clean visualizations.</p>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">E-commerce Development</h3>
+        <p class="text-gray-300">Dynamic and scalable online stores with M-Pesa payment integration, optimized performance, and a user-friendly interface.</p>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Tech Consultancy & Troubleshooting</h3>
+        <p class="text-gray-300">Professional debugging and optimization using tools like Postman, Ngrok, and Apache configs for backend systems.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+ <!-- Projects Section -->
+<section id="projects" class="py-16 px-6 bg-gray-800 text-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-12 text-center">My Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project 1: Currency Converter -->
+      <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Currency Converter</h3>
+        <p class="text-gray-300 mb-3">Web app for live currency conversion with real-time ExchangeRate API integration and mobile-friendly UI.</p>
+        <a href="https://github.com/davidchegewaithaka/currency-converter" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+      </div>
+
+      <!-- Project 2: Weather Dashboard -->
+      <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Weather Dashboard</h3>
+        <p class="text-gray-300 mb-3">Responsive dashboard using OpenWeatherMap API to display real-time weather data like temperature and humidity.</p>
+        <a href="https://github.com/davidchegewaithaka/weather-dashboard" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+      </div>
+
+      <!-- Project 3: M-Pesa STK Push Integration -->
+      <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">M-Pesa STK Push Integration</h3>
+        <p class="text-gray-300 mb-3">Full-stack solution with PHP and MySQL. Includes STK push, callback handling, JSON logging, and Postman + Ngrok testing.</p>
+        <a href="https://github.com/davidchegewaithaka/mpesa-stk-integration" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+      </div>
+
+      <!-- Project 4: Kwetu Web Shop -->
+      <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Kwetu Web Shop</h3>
+        <p class="text-gray-300 mb-3">E-commerce app built with Django backend, JSON logging, and real-time M-Pesa API integration for payments.</p>
+        <a href="https://github.com/davidchegewaithaka/kwetu-webshop" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+      </div>
+
+      <!-- Project 5: Tableau - Bigfoot Sightings -->
+      <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Bigfoot Sightings by State</h3>
+        <p class="text-gray-300 mb-3">Interactive Tableau dashboard analyzing Bigfoot sightings across U.S. states with filters and visual storytelling.</p>
+        <a href="https://public.tableau.com/app/profile/david.waithaka/viz/BigFootSightingsByState_17462011669500/KentuckyDashboardhttps" target="_blank" class="text-blue-400 hover:underline">View Visualization</a>
+      </div>
+
+      <!-- Project 6: Tableau - Top 10 Rated Movies -->
+      <div class="bg-gray-700 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-semibold mb-2">Top 10 Rated Movies by Genre</h3>
+        <p class="text-gray-300 mb-3">Tableau visualization exploring top-rated films per genre, offering insightful comparisons and visual clarity.</p>
+        <a href="https://public.tableau.com/app/profile/david.waithaka/viz/Top10ratedmoviebygenre/Top10RatedFilmsbyGenre_" target="_blank" class="text-blue-400 hover:underline">View Visualization</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 bg-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+      <form action="https://formspree.io/f/mldbvnkr" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded bg-gray-700 text-white">
+        <input type="email" name="_replyto" placeholder="Your Email" required class="w-full p-2 rounded bg-gray-700 text-white">
+        <textarea name="message" rows="4" placeholder="Your Message" required class="w-full p-2 rounded bg-gray-700 text-white"></textarea>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Send Message</button>
+      </form>
+      <p class="text-gray-300 mt-4">Email: videewaithaka@gmail.com</p>
+      <p class="text-gray-300">GitHub: <a href="https://github.com/davidchegewaithaka" class="text-blue-400">github.com/davidchegewaithaka</a></p>
+    </div>
+  </section>
+
+  <!-- Social Media Section -->
+<div class="mt-10 text-center">
+  <h3 class="text-lg font-semibold text-white mb-4">Connect with me</h3>
+  <div class="flex justify-center space-x-6 text-white text-2xl">
+    <!-- Instagram -->
+    <a href="https://instagram.com/i.heart.videeh" target="_blank" aria-label="Instagram" class="hover:text-pink-500">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <!-- Facebook -->
+    <a href="https://facebook.com/yourusername" target="_blank" aria-label="Facebook" class="hover:text-blue-500">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <!-- X (Twitter) -->
+    <a href="https://x.com/yourusername" target="_blank" aria-label="X" class="hover:text-gray-400">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+    <!-- Threads -->
+    <a href="https://www.threads.net/i.heart.videeh" target="_blank" aria-label="Threads" class="hover:text-purple-400">
+      <i class="fab fa-threads"></i>
+    </a>
+    <!-- Tableau -->
+    <a href="https://public.tableau.com/app/profile/david.waithaka" target="_blank" aria-label="Tableau" class="hover:text-orange-400">
+      <i class="fas fa-chart-bar"></i>
+    </a>
+    <!-- GitHub -->
+    <a href="https://github.com/davidchegewaithaka" target="_blank" aria-label="GitHub" class="hover:text-gray-300">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-4 text-center text-gray-400">
+    &copy; 2025 David Chege Waithaka. All rights reserved.
+  </footer>
+
+  <!-- Mobile Navbar Script -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const navLinks = document.getElementById("nav-links");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+  <!-- Typed.js for Typewriter Effect -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed", {
+    strings: ["Tech Enthusiast", "Junior front end developer", "Backend Engineer"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
+  });
+</script>
+
+
+</body>
+
+</html>
