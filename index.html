@@ -9,6 +9,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     html {
       scroll-behavior: smooth;
@@ -26,8 +27,24 @@
         width: var(--progress);
       }
     }
+
+    /* Tooltip Style */
+    [title]:hover::after {
+      content: attr(title);
+      position: absolute;
+      top: -1.8rem;
+      right: 0;
+      background: #1f2937; /* Tailwind's gray-800 */
+      color: white;
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      border-radius: 4px;
+      white-space: nowrap;
+      z-index: 10;
+    }
   </style>
 </head>
+
 
 <body class="bg-gray-900 text-white font-sans">
 
@@ -155,32 +172,35 @@
           <label class="flex items-center gap-2 font-semibold">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="w-5 h-5" /> PHP
           </label>
-          <div class="w-full h-4 bg-gray-700 rounded">
-            <div class="h-4 bg-blue-500 rounded shadow-lg group-hover:shadow-blue-400 transition-all duration-700 ease-in-out" style="width: 90%;"></div>
+          <div class="w-full h-4 bg-gray-700 rounded relative group" title="90%">
+            <div class="h-4 bg-blue-500 rounded skill-bar" data-percentage="90" style="width: 0%; transition: width 1s ease-in-out;"></div>
           </div>
         </div>
+
         <div class="group">
           <label class="flex items-center gap-2 font-semibold">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-5 h-5" /> MySQL
           </label>
-          <div class="w-full h-4 bg-gray-700 rounded">
-            <div class="h-4 bg-green-500 rounded shadow-lg group-hover:shadow-green-400 transition-all duration-700 ease-in-out" style="width: 85%;"></div>
+          <div class="w-full h-4 bg-gray-700 rounded relative group" title="85%">
+            <div class="h-4 bg-green-500 rounded skill-bar" data-percentage="85" style="width: 0%; transition: width 1s ease-in-out;"></div>
           </div>
         </div>
+
         <div class="group">
           <label class="flex items-center gap-2 font-semibold">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-5 h-5" /> JavaScript
           </label>
-          <div class="w-full h-4 bg-gray-700 rounded">
-            <div class="h-4 bg-yellow-500 rounded shadow-lg group-hover:shadow-yellow-400 transition-all duration-700 ease-in-out" style="width: 80%;"></div>
+          <div class="w-full h-4 bg-gray-700 rounded relative group" title="80%">
+            <div class="h-4 bg-yellow-500 rounded skill-bar" data-percentage="80" style="width: 0%; transition: width 1s ease-in-out;"></div>
           </div>
         </div>
+
         <div class="group">
           <label class="flex items-center gap-2 font-semibold">
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-5 h-5" /> Tailwind CSS
           </label>
-          <div class="w-full h-4 bg-gray-700 rounded">
-            <div class="h-4 bg-indigo-500 rounded shadow-lg group-hover:shadow-indigo-400 transition-all duration-700 ease-in-out" style="width: 75%;"></div>
+          <div class="w-full h-4 bg-gray-700 rounded relative group" title="75%">
+            <div class="h-4 bg-indigo-500 rounded skill-bar" data-percentage="75" style="width: 0%; transition: width 1s ease-in-out;"></div>
           </div>
         </div>
       </div>
@@ -191,32 +211,35 @@
           <label class="flex items-center gap-2 font-semibold">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-5 h-5" /> HTML
           </label>
-          <div class="w-full h-4 bg-gray-700 rounded">
-            <div class="h-4 bg-orange-500 rounded shadow-lg group-hover:shadow-orange-400 transition-all duration-700 ease-in-out" style="width: 95%;"></div>
+          <div class="w-full h-4 bg-gray-700 rounded relative group" title="95%">
+            <div class="h-4 bg-orange-500 rounded skill-bar" data-percentage="95" style="width: 0%; transition: width 1s ease-in-out;"></div>
           </div>
         </div>
+
         <div class="group">
           <label class="flex items-center gap-2 font-semibold">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-5 h-5" /> Python
           </label>
-          <div class="w-full h-4 bg-gray-700 rounded">
-            <div class="h-4 bg-yellow-600 rounded shadow-lg group-hover:shadow-yellow-300 transition-all duration-700 ease-in-out" style="width: 70%;"></div>
+          <div class="w-full h-4 bg-gray-700 rounded relative group" title="70%">
+            <div class="h-4 bg-yellow-600 rounded skill-bar" data-percentage="70" style="width: 0%; transition: width 1s ease-in-out;"></div>
           </div>
         </div>
+
         <div class="group">
           <label class="flex items-center gap-2 font-semibold">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" class="w-5 h-5" /> Bootstrap
           </label>
-          <div class="w-full h-4 bg-gray-700 rounded">
-            <div class="h-4 bg-purple-500 rounded shadow-lg group-hover:shadow-purple-400 transition-all duration-700 ease-in-out" style="width: 78%;"></div>
+          <div class="w-full h-4 bg-gray-700 rounded relative group" title="78%">
+            <div class="h-4 bg-purple-500 rounded skill-bar" data-percentage="78" style="width: 0%; transition: width 1s ease-in-out;"></div>
           </div>
         </div>
+
         <div class="group">
           <label class="flex items-center gap-2 font-semibold">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="w-5 h-5" /> Django
           </label>
-          <div class="w-full h-4 bg-gray-700 rounded">
-            <div class="h-4 bg-green-600 rounded shadow-lg group-hover:shadow-green-300 transition-all duration-700 ease-in-out" style="width: 68%;"></div>
+          <div class="w-full h-4 bg-gray-700 rounded relative group" title="68%">
+            <div class="h-4 bg-green-600 rounded skill-bar" data-percentage="68" style="width: 0%; transition: width 1s ease-in-out;"></div>
           </div>
         </div>
       </div>
@@ -396,6 +419,26 @@
     typeSpeed: 60,
     backSpeed: 40,
     loop: true
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll(".skill-bar");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const percent = el.getAttribute("data-percentage");
+          el.style.transitionDelay = `${i * 150}ms`;
+          el.style.width = percent + "%";
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    bars.forEach((bar) => observer.observe(bar));
   });
 </script>
 
